@@ -1,0 +1,83 @@
+/*初始化样式*/
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins,kbd, q, samp, small, strong, b, i,dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, canvas, footer, header, nav, section, audio, video {
+  padding: 0px;
+  margin: 0px;
+}
+
+body,
+html {
+  font-family: 'Microsoft YaHei', arial, "Hiragino Sans GB";
+  font-size: 14px;
+  background-color: #f6f6f6;
+  width: 100%;
+  min-width: 1100px;
+}
+
+a,
+input,
+button {
+  outline: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.w {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}

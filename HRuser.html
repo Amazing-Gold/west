@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HR 个人设置</title>
+
+    <link rel="stylesheet" href="./bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./layer/layer.js"></script>
+    <script src="./layui/layui.js"></script>
+
+    <link rel="stylesheet" href="./css/HRuser.css">
+    <script src="./js/HRuser.js"></script>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <div class="head">
+            <div class="w">
+                <div class="head_left fl">
+                    <a href="/HRhome.html">
+                        <img src="./images/2.png" alt="">
+                    </a>
+                </div>
+                <div class="head_right fl">
+                    <div class="input-group">
+                        <input type="text" class="form-control" autocomplete="off" placeholder="搜索您感兴趣的内容...">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </div>
+                    <div class="login fr">
+                        <i class="iconfont icon-lingdang"></i>
+                        <div class="touxiang fr">
+                            <img src="" alt="">
+                        </div>
+                        <!-- 头像显示框 -->
+                        <div class="show-box">
+                            <div class="box-t clearfix">
+                                <div class="t-tou fl">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="message fl">
+                                    <p>HR公社用户001</p>
+                                    <p>积分：20</p>
+                                </div>
+                            </div>
+                            <div class="box-c clearfix">
+                                <a href="/HRmine.html" class="fl">个人中心</a>
+                                <a href="/HRuser.html" class="fr">个人设置</a>
+                            </div>
+                            <div class="box-b clearfix">
+                                <a href="/HRindex.html">安全退出</a>
+                                <a href="javascript:;">签到</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user-content w">
+            <div class="clearfix user-center">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-stacked user-l" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#xinxi" role="tab" data-toggle="tab">个人基本信息</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#guanli" role="tab" data-toggle="tab">密码 / 邮箱管理</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#jifen" role="tab" data-toggle="tab">积分管理</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content user-r">
+                    <!-- 信息 -->
+                    <div role="tabpanel" class="tab-pane active" id="xinxi">
+                        <form>
+                            <div class="form-box form-box-ml">
+                                <div class="touxiang">
+                                    <img src="" alt="">
+                                </div>
+                                <button class="touxiang-btn">更换头像</button>
+                            </div>
+                            <!-- <div class="form-box">
+                                <span class="box-txt">姓名</span>
+                                <input type="text" class="box-inp" name="name" autocomplete="off">
+                                <i>(不对外公开)</i>
+                                <span class="user-hint"></span>
+                            </div> -->
+                            <div class="form-box">
+                                <span class="box-txt">昵称</span>
+                                <input type="text" id="nickname" class="box-inp" name="nickname" autocomplete="off">
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box">
+                                <span>性别</span>
+                                <input type="radio" id="man" name="sex" value="男" checked="checked"> 男
+                                <input type="radio" id="woman" name="sex" value="女"> 女
+                            </div>
+                            <div class="form-box">
+                                <span>手机号</span>
+                                <input type="text" id="usernumber" class="box-inp" name="usernumber" autocomplete="off">
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box">
+                                <span>参加工作时间</span>
+                                <input type="text" id="time" class="box-inp" name="time">
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box">
+                                <span>当前职业信息</span>
+                                <select id="profession" name="profession" class="box-inp">
+                                    <option value="" style="display:none">所属行业</option>
+                                    <option value="高新科技">高新科技</option>
+                                    <option value="互联网">&nbsp;&nbsp;&nbsp;互联网</option>
+                                    <option value="电子商务">&nbsp;&nbsp;&nbsp;电子商务</option>
+                                    <option value="电子游戏">&nbsp;&nbsp;&nbsp;电子游戏</option>
+                                    <option value="计算机软件">&nbsp;&nbsp;&nbsp;计算机软件</option>
+                                    <option value="计算机硬件">&nbsp;&nbsp;&nbsp;计算机硬件</option>
+                                    <option value="信息传媒">信息传媒</option>
+                                    <option value="出版业">&nbsp;&nbsp;&nbsp;出版业</option>
+                                    <option value="电影录音">&nbsp;&nbsp;&nbsp;电影录音</option>
+                                    <option value="广播电视">&nbsp;&nbsp;&nbsp;广播电视</option>
+                                    <option value="通信">&nbsp;&nbsp;&nbsp;通信</option>
+                                    <option value="金融">金融</option>
+                                    <option value="银行">&nbsp;&nbsp;&nbsp;银行</option>
+                                    <option value="资本投资">&nbsp;&nbsp;&nbsp;资本投资</option>
+                                    <option value="证券投资">&nbsp;&nbsp;&nbsp;证券投资</option>
+                                    <option value="保险">&nbsp;&nbsp;&nbsp;保险</option>
+                                    <option value="信贷">&nbsp;&nbsp;&nbsp;信贷</option>
+                                    <option value="财务">&nbsp;&nbsp;&nbsp;财务</option>
+                                    <option value="审计">&nbsp;&nbsp;&nbsp;审计</option>
+                                    <option value="服务业">服务业</option>
+                                    <option value="法律">&nbsp;&nbsp;&nbsp;法律</option>
+                                    <option value="餐饮">&nbsp;&nbsp;&nbsp;餐饮</option>
+                                    <option value="酒店">&nbsp;&nbsp;&nbsp;酒店</option>
+                                    <option value="旅游">&nbsp;&nbsp;&nbsp;旅游</option>
+                                    <option value="广告">&nbsp;&nbsp;&nbsp;广告</option>
+                                    <option value="公关">&nbsp;&nbsp;&nbsp;公关</option>
+                                    <option value="景观">&nbsp;&nbsp;&nbsp;景观</option>
+                                    <option value="咨询分析">&nbsp;&nbsp;&nbsp;咨询分析</option>
+                                    <option value="市场推广">&nbsp;&nbsp;&nbsp;市场推广</option>
+                                    <option value="人力资源">&nbsp;&nbsp;&nbsp;人力资源</option>
+                                    <option value="社工服务">&nbsp;&nbsp;&nbsp;社工服务</option>
+                                    <option value="养老服务">&nbsp;&nbsp;&nbsp;养老服务</option>
+                                    <option value="教育">教育</option>
+                                    <option value="高等教育">&nbsp;&nbsp;&nbsp;高等教育</option>
+                                    <option value="基础教育">&nbsp;&nbsp;&nbsp;基础教育</option>
+                                    <option value="职业教育">&nbsp;&nbsp;&nbsp;职业教育</option>
+                                    <option value="幼儿教育">&nbsp;&nbsp;&nbsp;幼儿教育</option>
+                                    <option value="特殊教育">&nbsp;&nbsp;&nbsp;特殊教育</option>
+                                    <option value="培训">&nbsp;&nbsp;&nbsp;培训</option>
+                                    <option value="医疗服务">医疗服务</option>
+                                    <option value="临床医疗">&nbsp;&nbsp;&nbsp;临床医疗</option>
+                                    <option value="制药">&nbsp;&nbsp;&nbsp;制药</option>
+                                    <option value="保健">&nbsp;&nbsp;&nbsp;保健</option>
+                                    <option value="美容">&nbsp;&nbsp;&nbsp;美容</option>
+                                    <option value="医疗器材">&nbsp;&nbsp;&nbsp;医疗器材</option>
+                                    <option value="生物工程">&nbsp;&nbsp;&nbsp;生物工程</option>
+                                    <option value="疗养服务">&nbsp;&nbsp;&nbsp;疗养服务</option>
+                                    <option value="护理服务">&nbsp;&nbsp;&nbsp;护理服务</option>
+                                    <option value="艺术娱乐">艺术娱乐</option>
+                                    <option value="创意艺术">&nbsp;&nbsp;&nbsp;创意艺术</option>
+                                    <option value="体育健身">&nbsp;&nbsp;&nbsp;体育健身</option>
+                                    <option value="娱乐休闲">&nbsp;&nbsp;&nbsp;娱乐休闲</option>
+                                    <option value="图书馆">&nbsp;&nbsp;&nbsp;图书馆</option>
+                                    <option value="博物馆">&nbsp;&nbsp;&nbsp;博物馆</option>
+                                    <option value="策展">&nbsp;&nbsp;&nbsp;策展</option>
+                                    <option value="博彩">&nbsp;&nbsp;&nbsp;博彩</option>
+                                    <option value="制造加工">制造加工</option>
+                                    <option value="食品饮料业">&nbsp;&nbsp;&nbsp;食品饮料业</option>
+                                    <option value="纺织皮革业">&nbsp;&nbsp;&nbsp;纺织皮革业</option>
+                                    <option value="服装业">&nbsp;&nbsp;&nbsp;服装业</option>
+                                    <option value="烟草业">&nbsp;&nbsp;&nbsp;烟草业</option>
+                                    <option value="造纸业">&nbsp;&nbsp;&nbsp;造纸业</option>
+                                    <option value="印刷业">&nbsp;&nbsp;&nbsp;印刷业</option>
+                                    <option value="化工业">&nbsp;&nbsp;&nbsp;化工业</option>
+                                    <option value="汽车">&nbsp;&nbsp;&nbsp;汽车</option>
+                                    <option value="家具">&nbsp;&nbsp;&nbsp;家具</option>
+                                    <option value="电子电器">&nbsp;&nbsp;&nbsp;电子电器</option>
+                                    <option value="机械设备">&nbsp;&nbsp;&nbsp;机械设备</option>
+                                    <option value="塑料工业">&nbsp;&nbsp;&nbsp;塑料工业</option>
+                                    <option value="金属加工">&nbsp;&nbsp;&nbsp;金属加工</option>
+                                    <option value="军火">&nbsp;&nbsp;&nbsp;军火</option>
+                                    <option value="地产建筑">地产建筑</option>
+                                    <option value="房地产">&nbsp;&nbsp;&nbsp;房地产</option>
+                                    <option value="装饰装潢">&nbsp;&nbsp;&nbsp;装饰装潢</option>
+                                    <option value="物业服务">&nbsp;&nbsp;&nbsp;物业服务</option>
+                                    <option value="特殊建造">&nbsp;&nbsp;&nbsp;特殊建造</option>
+                                    <option value="建筑设备">&nbsp;&nbsp;&nbsp;建筑设备</option>
+                                    <option value="贸易零售">贸易零售</option>
+                                    <option value="零售">&nbsp;&nbsp;&nbsp;零售</option>
+                                    <option value="大宗交易">&nbsp;&nbsp;&nbsp;大宗交易</option>
+                                    <option value="进出口贸易">&nbsp;&nbsp;&nbsp;进出口贸易</option>
+                                    <option value="公共服务">公共服务</option>
+                                    <option value="政府">&nbsp;&nbsp;&nbsp;政府</option>
+                                    <option value="国防军事">&nbsp;&nbsp;&nbsp;国防军事</option>
+                                    <option value="航天">&nbsp;&nbsp;&nbsp;航天</option>
+                                    <option value="科研">&nbsp;&nbsp;&nbsp;科研</option>
+                                    <option value="给排水">&nbsp;&nbsp;&nbsp;给排水</option>
+                                    <option value="水利能源">&nbsp;&nbsp;&nbsp;水利能源</option>
+                                    <option value="电力电网">&nbsp;&nbsp;&nbsp;电力电网</option>
+                                    <option value="公共管理">&nbsp;&nbsp;&nbsp;公共管理</option>
+                                    <option value="环境保护">&nbsp;&nbsp;&nbsp;环境保护</option>
+                                    <option value="非盈利组织">&nbsp;&nbsp;&nbsp;非盈利组织</option>
+                                    <option value="开采冶金">开采冶金</option>
+                                    <option value="煤炭工业">&nbsp;&nbsp;&nbsp;煤炭工业</option>
+                                    <option value="石油工业">&nbsp;&nbsp;&nbsp;石油工业</option>
+                                    <option value="黑色金属">&nbsp;&nbsp;&nbsp;黑色金属</option>
+                                    <option value="有色金属">&nbsp;&nbsp;&nbsp;有色金属</option>
+                                    <option value="土砂石开采">&nbsp;&nbsp;&nbsp;土砂石开采</option>
+                                    <option value="地热开采">&nbsp;&nbsp;&nbsp;地热开采</option>
+                                    <option value="交通仓储">交通仓储</option>
+                                    <option value="邮政">&nbsp;&nbsp;&nbsp;邮政</option>
+                                    <option value="物流递送">&nbsp;&nbsp;&nbsp;物流递送</option>
+                                    <option value="地面运输">&nbsp;&nbsp;&nbsp;地面运输</option>
+                                    <option value="铁路运输">&nbsp;&nbsp;&nbsp;铁路运输</option>
+                                    <option value="管线运输">&nbsp;&nbsp;&nbsp;管线运输</option>
+                                    <option value="航运业">&nbsp;&nbsp;&nbsp;航运业</option>
+                                    <option value="民用航空业">&nbsp;&nbsp;&nbsp;民用航空业</option>
+                                    <option value="农林牧渔">农林牧渔</option>
+                                    <option value="种植业">&nbsp;&nbsp;&nbsp;种植业</option>
+                                    <option value="畜牧养殖业">&nbsp;&nbsp;&nbsp;畜牧养殖业</option>
+                                    <option value="林业">&nbsp;&nbsp;&nbsp;林业</option>
+                                    <option value="渔业">&nbsp;&nbsp;&nbsp;渔业</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box form-box-ml">
+                                <input type="text" id="companyname" placeholder="公司名称" class="box-inp-w" autocomplete="off" name="companyname">
+                                <input type="checkbox">
+                                <i>(不对外公开)</i>
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box form-box-ml">
+                                <select name="scale" id="scale" class="box-inp-w">
+                                    <option value="" style="display:none">公司规模</option>
+                                    <option value="1">0-20 人</option>
+                                    <option value="2">20-99 人</option>
+                                    <option value="3">100-499 人</option>
+                                    <option value="4">500-999 人</option>
+                                    <option value="5">1000-9999 人以上</option>
+                                    <option value="6">10000 人以上</option>
+                                </select>
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box form-box-ml">
+                                <select name="userpost" id="userpost" class="box-inp-w">
+                                    <option value="" style="display:none">您的职位</option>
+                                    <option value="高层管理职位">高层管理职位</option>
+                                    <option value="人力资源管理职位">人力资源管理职位</option>
+                                    <option value="财务与会计职位">财务与会计职位</option>
+                                    <option value="市场营销职位">市场营销职位</option>
+                                    <option value="行政管理职位">行政管理职位</option>
+                                    <option value="销售职位">销售职位</option>
+                                    <option value="生产职位">生产职位</option>
+                                    <option value="物流职位">物流职位</option>
+                                    <option value="技术职位">技术职位</option>
+                                    <option value="其他职位">其他职位</option>
+                                </select>
+                                <span class="user-hint"></span>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="save-usermessage">保存信息</button>
+                        </form>
+                    </div>
+                    <!-- 密码邮箱 -->
+                    <div role="tabpanel" class="tab-pane" id="guanli">
+                        <form action="">
+                            <p>密码修改</p>
+                            <div class="form-box">
+                                <span class="box-txt">原始密码</span>
+                                <input type="password" id="alter-oldpwd" class="box-inp">
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box">
+                                <span class="box-txt">新密码</span>
+                                <input type="password" id="alter-setpwd" class="box-inp">
+                                <span class="user-hint"></span>
+                            </div>
+                            <div class="form-box">
+                                <span class="box-txt">确认密码</span>
+                                <input type="password" id="alter-okpwd" class="box-inp">
+                                <span class="user-hint"></span>
+                            </div>
+                            <button type="button" id="pwd-btn" class="btn btn-primary">保存设置</button>
+                            <p>邮箱修改</p>
+                            <div class="form-box">
+                                <span class="box-txt">确认邮箱</span>
+                                <input type="text" id="alter-eml" class="box-inp" autocomplete="off">
+                                <span class="user-hint"></span>
+                                <i>邮箱用于找回您的密码</i>
+                            </div>
+                            <div class="form-box yzmbox">
+                                <input type="text" id="eml-code" class="box-inp" autocomplete="off" placeholder="输入验证码">
+                                <button type="button" id="eml-get-code">获取验证码</button>
+                                <span class="user-hint"></span>
+                            </div>
+                            <button type="button" id="eml-btn" class="btn btn-primary">保存设置</button>
+
+                        </form>
+                    </div>
+                    <!-- 积分 -->
+                    <div role="tabpanel" class="tab-pane" id="jifen">
+                        <div class="jifen-top">
+                            <div class="top-l">
+                                当前积分：
+                                <span>300</span>分
+                            </div>
+
+                            <div class="top-l top-c">
+                                <span>累计得分：</span>
+                                <span>600</span>分
+                                <span>累计消耗：</span>
+                                <span>300</span>分
+                            </div>
+
+                            <div class="fr jifen-top-r">
+                                <i>
+                                    <img src="./images/感叹号.png" alt="">
+                                </i>
+                                <a href="javascript:;" onclick="showGuizebox()">积分规则</a>
+                                <button type="button" class="btn btn-primary btn-sm" onclick="showDuihuanbox()">兑换好礼</button>
+                                <!-- 积分规则弹出框 -->
+                                <div class="up-box guizebox hide">
+                                    <!-- 关闭按钮 -->
+                                    <a href="javascript:;" class="guanbi" onclick="hideUpbox()">
+                                        <img src="./images/guanbi2.png" alt="">
+                                    </a>
+                                    <p>积分规则:</p>
+                                    <ul>
+                                        <li>1：用户注册：奖励积分100</li>
+                                        <li>2：签到：每日签到5积分，连续签到5天，额外奖励20积分</li>
+                                        <li>3：发新帖：每次2积分，每日最多增加20积分</li>
+                                        <li>4：回复帖子：每次1积分，每日最多增加10积分</li>
+                                        <li>5：帖子被点赞：每赞1积分</li>
+                                        <li>6：精华帖：管理员设置的精华帖，每次100积分</li>
+                                        <li>7：在线时长：累计在线1小时2积分，4小时10积分，8小时20积分（08:00 - 20:00）</li>
+                                        <li>8：所有积分不会清零。</li>
+                                    </ul>
+                                </div>
+                                <!-- 积分兑换弹出框 -->
+                                <div class="up-box duihuanbox hide">
+                                    <!-- 关闭按钮 -->
+                                    <a href="javascript:;" class="guanbi" onclick="hideUpbox()">
+                                        <img src="./images/guanbi2.png" alt="">
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                        <li>
+                                            <img src="" alt="">
+                                            <button>立即兑换</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jifen-list">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>积分变动情况</th>
+                                        <th>明细</th>
+                                        <th>时间</th>
+                                        <th>当前积分</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">+1</th>
+                                        <td>签到</td>
+                                        <td>2018.08.15 13:14</td>
+                                        <td>234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer ">
+            <div class="w foot clearfix">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">联系我们</a> |
+                    <a href="#">意见建议</a> |
+                    <a href="#">法律声明</a>
+                </p>
+                <p>版权所有 © 西安蒲公英信息技术有限公司 陕ICP备000001号</p>
+            </div>
+        </div>
+
+        <!-- 右侧固定定位栏 -->
+        <div class="flex">
+            <ul>
+                <li id="go-top" style="display: none">
+                    <span>
+                        <img src="./images/返回顶.png" alt="">
+                    </span>
+                    <div class="explain">返回</br>顶部</div>
+                </li>
+                <li>
+                    <span>
+                        <img src="./images/发布.png" alt="">
+                    </span>
+                    <div class="explain">一键</br>发帖</div>
+                </li>
+                <li>
+                    <span>
+                        <img src="./images/微信.png" alt="">
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <img src="./images/扫码加群.png" alt="">
+                    </span>
+                    <img src="./images/erweima.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

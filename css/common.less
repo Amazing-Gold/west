@@ -1,0 +1,195 @@
+/*公共头部*/
+.head {
+    width: 100%;
+    height: 100px;
+    background-color: #189BE4;
+    .head_left{
+        padding-left: 4%;
+        width: 50%;
+        height: 100px;
+        position: relative;
+        img{
+            cursor: pointer;
+            height: 60%;
+            display: block;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    .head_right{
+        margin-top: 26px;
+        width: 50%;
+        height: 100%; 
+        .input-group{
+            width: 55%;
+            position: relative;
+            span{
+                position: absolute;
+                right: 8%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 99;
+                color: #8F939C;
+                font-size: 20px;
+                cursor: pointer;
+            }
+            .form-control{
+                height: 48px;
+                border-radius: 20px;
+                padding-left: 20px;
+            }
+        }
+        .login{
+            position: relative;
+            width: 20%;
+            font-size: 20px;
+            color: #FDFFFD;
+            margin: -46px 13% 0 0;
+            a{
+            color: #FDFFFD;
+            }
+            i {
+                font-size: 26px;
+                cursor: pointer;
+            }
+            .touxiang {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: pink;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+            .show-box {
+                font-size: 14px;
+                width: 250px;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #DDDDDD;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                background-color: #fff;
+                color: black;
+                display: none;
+                z-index: 99;
+                a {
+                    color: black;
+                }
+                .box-t {
+                    .t-tou {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                        background-color: pink;
+                    }
+                    .message {
+                        margin: 10px 20px;
+                        margin-right: 0;
+                    }
+                }
+                .box-c {
+                    a {
+                        padding: 5px 10%;
+                        background-color: #F0F0F0;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                    a:last-child {
+                        margin-right: 0;
+                    }
+                }
+                .box-b {
+                    margin-top: 20px;
+                    a {
+                        padding: 5px 8%;
+                    }
+                    a:first-child {
+                        float: left;
+                        padding-left: 0px;
+                    }
+                    a:last-child {
+                        float: right;
+                        border-radius: 5px;
+                        background-color: #189BE4;
+                    }
+                }
+            }
+        }
+    }
+}
+/*公共底部*/
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #189BE4;
+    text-align: center;
+    .foot {
+        color: #fff;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+    }
+    .foot p:first-child {
+        margin-bottom: 20px;
+        margin-top: 70px;
+    }
+    
+    .foot :first-child a {
+        padding: 0 10px;
+    }
+    .foot a:first-child {
+        padding-left: 0;
+    }
+}
+
+/*右侧定位*/
+.flex{
+    position: fixed;
+    right: 62px;
+    bottom: 62px;
+    li {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background-color: #6DC4F5;
+        margin-bottom: 10px;
+        cursor: pointer;
+        .explain{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background-color: #88a0c7;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            padding-top: 8px;
+            display: none;
+        }
+    }
+    li:last-of-type {
+        z-index: 999;
+        >img {
+            position: absolute;
+            top: -91px;
+            left: -151px;
+            display: block;
+            display: none;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+}
+
+

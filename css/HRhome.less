@@ -1,0 +1,205 @@
+
+body {
+    position: relative;
+}
+
+.wrap {
+    .content{
+        height: 720px;
+        padding: 30px 10px 0 10px;
+        background-color: #fff;
+        .content_top{
+            width: 100%;
+            .con_left{
+                width: 40%;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 260px;
+                }
+            }
+            .con_c{
+                height: 260px;
+                width: 35%;
+                padding: 0 15px;
+                a{
+                    color: #999;   
+                }
+                .nav>li>a:focus, .nav>li>a:hover{
+                    background-color: #fff;
+                }
+                .nav-tabs{
+                    width: 100%;
+                    border:none;
+                    li{
+                        width: 33.33%;
+                        a {
+                            font-size: 18px;
+                            text-align: center;
+                            border: none;
+                            padding: 10px 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+                        border: none;
+                    }
+                    .active>a{
+                        font-size: 18px;
+                        color: #444 !important;
+                    }
+                }
+            .tab-content {
+                ul{
+                    padding: 0;
+                }
+                    li{
+                        font-size: 14px;
+                        color: #444;
+                        line-height: 20px;
+                        margin-bottom: 15px;
+                        overflow: hidden;/*超出部分隐藏*/
+                        white-space: nowrap;/*不换行*/
+                        text-overflow:ellipsis;
+                    }
+            }
+            }
+            .con_right {
+                height: 260px;
+                width: 25%;
+                background-color: rgb(233, 233, 233);
+                padding: 20px;
+                .r_top {
+                    height: 55px;
+                    margin-bottom: 20px;
+                    >p {
+                        margin-top: 5px;
+                        font-size: 12px;
+                    }
+                    .time {
+                        position: relative;
+                        .time-l {
+                            position: relative;
+                            font-size: 18px;
+                            span {
+                                position: absolute;
+                                font-size: 20px;
+                                color: #FF942A;
+                            }
+                            .month {
+                                left: 5px;
+                                top: 8px;                
+                            }
+                            .day {
+                                left: 70px;
+                                top: 8px;
+                            }
+                            img {
+                                vertical-align: bottom;
+                                margin-right: 5px;
+                            }
+                        }
+                        .time-r {
+                            button {
+                                height: 30px;
+                                background-color: #FF942C;
+                                border: 0;
+                                border-radius: 5px;
+                                color: #fff;
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                            }
+                        }
+                        p {
+                            color: #676767;
+                        }
+                    }
+                    p {
+                        color: #666;
+                    }
+                }
+                .r_bottom {
+                    text-align: center;
+                    .touxiang {
+                        height: 80px;
+                        width: 80px;
+                        margin: 0 auto;
+                        background-color: pink;
+                        border-radius: 50%;
+                    }
+                    .xingming {
+                        margin: 10px 0;
+                    }
+                    a {
+                        background-color: #fff;
+                        color: black;
+                        padding: 5px;
+                        i {
+                            color: #999;
+                        }
+                    }
+                    a:last-child {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        .content_bottom{
+            margin-top: 60px;
+            padding: 0 50px;
+            li{
+                position: relative;
+                height: 260px;
+                margin-right: 9%;
+                width: 9%;
+                float: left;
+                .con_bottom_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .con_bottom_b{
+                    position: absolute;
+                    bottom: 0;
+                    left: -25px;
+                    width: 160%;
+                    h4{
+                        text-align: center;
+                        margin-top: 20px;
+                        font-size: 20px;
+                        color: #444;
+                        font-weight: 600;
+                    }
+                    p{
+                        margin:12px 0;
+                        color: #999;
+                        font-size: 12px;
+                        >span {
+                            margin-right: 5px;
+                        }
+                        :last-of-type {
+                            margin-right: 0;                            
+                        }
+                    }
+                    .sketch{
+                        span{
+                            width: 100%;
+                            margin-bottom: 5px;
+                            display: inline-block;
+                            overflow: hidden;/*超出部分隐藏*/
+                            white-space: nowrap;/*不换行*/
+                            text-overflow:ellipsis;/*超出部分省略号显示*/
+                        }
+                    }
+                }
+            }
+            li:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+

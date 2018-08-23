@@ -1,0 +1,205 @@
+/*头部*/
+.head {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+.head .head_left {
+  padding-left: 4%;
+  width: 50%;
+  height: 100px;
+  position: relative;
+}
+.head .head_left img {
+  height: 60%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head .head_right {
+  width: 50%;
+  height: 100px;
+  position: relative;
+}
+.head .head_right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.head .head_right a {
+  color: #1A99E6;
+  text-decoration: underline;
+}
+/*主体*/
+.main {
+  background-image: url(../images/bg.jpg);
+  overflow: hidden;
+}
+.main .main-c {
+  width: 90%;
+  margin: 150px auto;
+}
+.main .main-c-l {
+  float: left;
+  height: 357px;
+  width: 60%;
+  background-color: #fff;
+}
+.main .main-c-r {
+  float: right;
+  height: 100%;
+  width: 35%;
+  padding: 30px;
+  background-color: #fff;
+}
+.main .main-c-r form > h3 {
+  margin-bottom: 18px;
+}
+.main .main-c-r input {
+  margin-bottom: 3px;
+  border-radius: 2px;
+}
+.main .main-c-r .r-yanzheng input {
+  float: left;
+  width: 60%;
+}
+.main .main-c-r .r-yanzheng .yanzheng {
+  float: right;
+  height: 34px;
+  width: 35%;
+}
+.main .main-c-r .r-yanzheng .yanzheng img {
+  height: 34px;
+  width: 100%;
+}
+.main .main-c-r .r-btn {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: 40px;
+  background-color: #189AE5;
+  border: 0;
+  color: #fff;
+}
+.main .main-c-r .checkbox {
+  font-size: 12px;
+  color: #CBCBCB;
+}
+.main .main-c-r .checkbox a {
+  color: #CBCBCB;
+}
+/*底部*/
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #189BE4;
+  text-align: center;
+}
+.footer .foot {
+  color: #fff;
+  font-size: 14px;
+}
+.footer .foot a {
+  color: #fff;
+}
+.footer .foot p:first-child {
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.footer .foot :first-child a {
+  padding: 0 10px;
+}
+.footer .foot a:first-child {
+  padding-left: 0;
+}
+/*遮盖*/
+.shade {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+.shade .shade-c {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 110px;
+  padding: 20px;
+  min-width: 260px;
+  width: 22%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.shade .shade-c .guanbi {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.shade .shade-c .guanbi img {
+  height: 15px;
+}
+.shade .shade-c .nav-tabs > li > a {
+  color: black;
+  border: 0;
+}
+.shade .shade-c .nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+.shade .shade-c .nav-tabs > li.active > a,
+.shade .shade-c .nav-tabs > li.active > a:focus,
+.shade .shade-c .nav-tabs > li.active > a:hover {
+  color: #189AE5;
+  cursor: default;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #179BE6;
+}
+.shade .shade-c .nav-tabs {
+  margin-bottom: 15px;
+}
+.shade .shade-c form p a {
+  color: black;
+  padding: 0 8px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.shade .shade-c form button {
+  width: 100%;
+  height: 30px;
+  background-color: #189AE5;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.shade .shade-c form #zc-get-code {
+  width: 40%;
+  height: 33px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.shade .shade-c .zhaohui-yanzheng input {
+  width: 55%;
+}
+.shade .shade-c .zhaohui-yanzheng #zh-get-code {
+  width: 40%;
+  height: 34px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.hint {
+  height: 17px;
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
+  margin-bottom: 0px;
+  padding-left: 5px;
+}
+.height-lock {
+  height: 54px;
+}

@@ -1,0 +1,158 @@
+.center .main .main-l {
+  width: 25%;
+  float: left;
+  background-color: #fff;
+  margin-right: 5%;
+}
+.center .main .main-l .main-l-t {
+  width: 100%;
+}
+.center .main .main-l .main-l-t .t-box {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.center .main .main-l .main-l-t .t-box .touxiang {
+  height: 120px;
+  width: 120px;
+  background-color: pink;
+  margin: 20px auto 10px auto;
+  border-radius: 50%;
+}
+.center .main .main-l .main-l-t .t-box p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.center .main .main-l .main-l-t .t-box .xingming {
+  font-size: 20px;
+  font-weight: 800;
+}
+.center .main .main-l .main-l-t .t-box .gongsi {
+  color: #666;
+}
+.center .main .main-l .main-l-t .t-box .btn {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+  background-color: #189AE5;
+  color: #fff;
+}
+.center .main .main-l .main-l-b {
+  height: 300px;
+  width: 100%;
+  margin-top: 10px;
+}
+.center .main .main-l .main-l-b .nav-tabs {
+  border-bottom: 0;
+}
+.center .main .main-l .main-l-b .nav-tabs > li {
+  height: 40px;
+  overflow: hidden;
+}
+.center .main .main-l .main-l-b .nav-tabs > li.active {
+  background-color: #189AE5;
+}
+.center .main .main-l .main-l-b .nav-tabs > li > a {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  padding-left: 10px;
+  color: #666;
+  margin: 10px 0 0 10px;
+}
+.center .main .main-l .main-l-b .nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+.center .main .main-l .main-l-b .nav-tabs > li.active > a,
+.center .main .main-l .main-l-b .nav-tabs > li.active > a:focus,
+.center .main .main-l .main-l-b .nav-tabs > li.active > a:hover {
+  color: #fff;
+  background-color: transparent;
+  border-left: 2px solid #fff;
+  margin-left: 10px;
+}
+.center .main .main-r {
+  height: 100%;
+  width: 70%;
+  float: right;
+  background-color: #fff;
+}
+.center .main .main-r .main-r-t {
+  overflow: hidden;
+  height: 90px;
+  border-bottom: 1px solid #189AE5;
+}
+.center .main .main-r .main-r-t p {
+  margin: 30px 0 0 4%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.center .main .main-r .main-r-b a {
+  color: black;
+}
+.center .main .main-r .main-r-b tr {
+  border: 0;
+  border-bottom: 1px solid #F7F7F7;
+}
+.center .main .main-r .main-r-b tr td:last-child {
+  color: #9A9A9A;
+  text-align: right;
+}
+.center .main .main-r .main-r-b .table > tbody > tr > td {
+  padding: 12px 20px;
+  border: 0;
+}
+.center .main .main-r #xiaoxi .active {
+  background-color: #189AE5;
+  color: #fff;
+  border-radius: 15px;
+}
+.center .main .main-r #xiaoxi .du {
+  margin: 30px 0 0 4%;
+}
+.center .main .main-r #xiaoxi p {
+  cursor: pointer;
+  padding: 5px 16px;
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 10px;
+  background-color: #F7F7F7;
+  border-radius: 15px;
+}
+.center .main .main-r #huifu .huifu-r-b ul {
+  margin-bottom: 0;
+  padding: 10px 10px 20px 20px;
+  border-bottom: 1px solid #F7F7F7;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(1) {
+  overflow: hidden;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(1) h4 {
+  width: 60%;
+  font-weight: 800;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(1) span {
+  margin: 10px 30px 0 0;
+  width: 30%;
+  color: #999999;
+  text-align: right;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(2) {
+  overflow: hidden;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(2) div {
+  float: left;
+  height: 40px;
+  width: 40px;
+  background-color: pink;
+  border-radius: 8px;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(2) p {
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.center .main .main-r #huifu .huifu-r-b ul li:nth-child(3) {
+  margin-top: 10px;
+}

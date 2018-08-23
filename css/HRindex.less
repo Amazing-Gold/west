@@ -1,0 +1,218 @@
+/*头部*/
+.head {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    .head_left{
+        padding-left: 4%;
+        width: 50%;
+        height: 100px;
+        position: relative;
+        img{
+            height: 60%;
+            display: block;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+    .head_right{
+        width: 50%;
+        height: 100px;
+        position: relative;
+        p {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translateY(-50%);
+        }
+        a {
+            color: #1A99E6;
+            text-decoration: underline;
+        }
+    }
+}
+
+/*主体*/
+.main {
+    background-image: url(../images/bg.jpg);
+    overflow: hidden;
+    .main-c {
+        width: 90%;
+        margin: 150px auto;
+    }
+    .main-c-l {
+        float: left;
+        height: 357px;
+        width: 60%;
+        background-color: #fff;
+    }
+    .main-c-r {
+        float: right;
+        height: 100%;
+        width: 35%;
+        padding: 30px;
+        background-color: #fff;
+        form>h3 {
+            margin-bottom: 18px;
+        }  
+        input {
+            margin-bottom: 3px;
+            border-radius: 2px;
+        }
+        .r-yanzheng {
+            input {
+                float: left;
+                width: 60%;
+            }
+            .yanzheng {
+                float: right;
+                height: 34px;
+                width: 35%;
+                img {
+                    height: 34px;
+                    width: 100%;
+                }
+            }
+        }
+        .r-btn {
+            display: block;
+            margin: 10px auto;
+            width: 100%;
+            height: 40px;
+            background-color: #189AE5;
+            border: 0;
+            color: #fff;
+        }
+        .checkbox {
+            font-size: 12px;
+            color: #CBCBCB;
+            a {
+                color: #CBCBCB;
+            }
+        }
+    }
+}
+
+/*底部*/
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #189BE4;
+    text-align: center;
+    .foot {
+        color: #fff;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+    }
+    .foot p:first-child {
+        margin-bottom: 20px;
+        margin-top: 70px;
+    }
+    
+    .foot :first-child a {
+        padding: 0 10px;
+    }
+    .foot a:first-child {
+        padding-left: 0;
+    }
+}
+/*遮盖*/
+.shade {
+    position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: none;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    .shade-c {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 110px;
+        padding: 20px;
+        min-width: 260px;
+        width: 22%;
+        background-color: #fff;
+        border-radius: 5px;
+        .guanbi {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            img {
+                height: 15px;
+            }
+        }
+        .nav-tabs>li>a {
+            color: black;
+            border: 0;
+        }
+        .nav-tabs>li>a:hover {
+            background-color: transparent;
+        }
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+            color: #189AE5;
+            cursor: default;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #179BE6;
+        }
+        .nav-tabs {
+            margin-bottom: 15px;
+        }
+        
+        form {
+            p {
+                a {
+                    color: black;
+                    padding: 0 8px;
+                    font-size: 12px;
+                    margin-bottom: 15px;
+                }
+            }
+            button {
+                width: 100%;
+                height: 30px;
+                background-color: #189AE5;
+                border: 0;
+                color: #fff;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+            #zc-get-code {
+                width: 40%;
+                height: 33px;
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+        }
+        
+        .zhaohui-yanzheng {
+            input {
+                width: 55%;
+            }
+            #zh-get-code {
+                width: 40%;
+                height: 34px;
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+        }   
+    }
+}
+
+.hint {
+    height: 17px;
+    font-size: 12px;
+    font-weight: normal;
+    color: red;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    // display: none;
+}
+.height-lock {
+    height: 54px;
+}

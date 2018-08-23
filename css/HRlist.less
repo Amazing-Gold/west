@@ -1,0 +1,82 @@
+.active {
+    border: #189AE5 2px solid !important;
+    border-radius: 4px;
+}
+
+/*主体*/
+.main {
+    a {
+        color: black;
+    }
+    .center {
+        background-color: #fff;
+        padding: 10px 20px;
+        .breadcrumb {
+            background-color: #fff;
+            padding: 8px;
+            list-style: none;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 800;
+        }
+        .breadcrumb>li+li:before{
+            content:">";
+            padding: 0 5px;
+            color: black;
+            // content: "/\00a0";
+        }
+        .bankuai {
+            padding: 8px 0;
+            span {
+                display: inline-block;
+                background-color: #189AE5;
+                border-radius: 4px;
+                padding: 0 5px;
+            }
+            a {
+                float: left;
+                text-align: center;
+                border: #BBBBBB 2px solid;
+                padding: 5px 8px;
+                margin-right: 2%;
+                border-radius: 4px;
+            }
+        }
+
+        .list {
+            thead {        
+                tr {
+                    :first-child {
+                        width: 50%;
+                        a {
+                            color: black;
+                            float: left;
+                            width: 10%;
+                            text-align: center;
+                            border: #fff 2px solid;
+                            margin-right: 5px; 
+                        }
+                    }
+                }
+            } 
+            tbody {
+                tr {
+                    .iconfont {
+                        font-size: 18px;
+                        font-weight: 800;
+                    }
+                    th {
+                        max-width: 450px;
+                        padding-right: 5%; 
+                        overflow: hidden;/*超出部分隐藏*/
+                        white-space: nowrap;/*不换行*/
+                        text-overflow:ellipsis;/*超出部分省略号显示*/
+                    }
+                    th,td {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
